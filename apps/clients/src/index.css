@@ -1,0 +1,9 @@
+.card {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.read-the-docs {
+  font-size: 0.8em;
+}
