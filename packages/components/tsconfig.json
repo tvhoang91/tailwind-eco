@@ -1,0 +1,9 @@
+{
+  "extends": "@yaywind/configs/src/typescript/react.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "typeRoots": ["./node_modules/@types", "types"]
+  },
+  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.tsx", "test/**/*.test.ts", "types"],
+  "exclude": ["node_modules", "dist"]
+}
