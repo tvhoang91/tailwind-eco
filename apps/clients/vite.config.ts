@@ -1,7 +1,9 @@
-import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 
-// https://vitejs.dev/config/
+// For Preview Loading Other Apps
 export default defineConfig({
-  plugins: [react()],
+  plugins: [],
+  build: {
+    outDir: './html',
+  },
 });
