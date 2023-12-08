@@ -1,7 +1,7 @@
-import defaultConfig from '@yaywind/configs/src/tailwind/default.config';
+import toolConfig from '@yaywind/configs/src/tailwind/tool.config';
 import type { Config } from 'tailwindcss';
 
 export default {
-  ...defaultConfig,
+  ...toolConfig,
   content: ['apps/**/*.{ts,tsx}', 'packages/**/*.{ts,tsx}'],
 } satisfies Config;
