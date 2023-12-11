@@ -10,7 +10,7 @@ export default defineConfig({
     react(),
     viteExternalsPlugin({
       react: 'React',
-      'react-dom': 'ReactDOM',
+      'react-dom/client': 'ReactDOM',
     }),
     // visualizer({ template: 'network', emitFile: true, filename: 'stats.html' }),
   ],

@@ -1,6 +1,6 @@
 import react from '@vitejs/plugin-react';
-// import { visualizer } from 'rollup-plugin-visualizer';
 import path from 'path';
+import { visualizer } from 'rollup-plugin-visualizer';
 import { defineConfig } from 'vite';
 import { viteExternalsPlugin } from 'vite-plugin-externals';
 
@@ -11,7 +11,7 @@ export default defineConfig({
     viteExternalsPlugin(
       {
         react: 'React',
-        'react-dom': 'ReactDOM',
+        'react-dom/client': 'ReactDOM',
 
         '@yaywind/components': 'components',
       },
@@ -19,7 +19,7 @@ export default defineConfig({
         disableInServe: true,
       },
     ),
-    // visualizer({ template: 'network', emitFile: true, filename: 'stats.html' }),
+    visualizer({ template: 'network', emitFile: true, filename: 'stats.html' }),
   ],
   build: {
     emptyOutDir: true,
