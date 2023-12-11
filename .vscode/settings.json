@@ -13,6 +13,7 @@
   },
   "editor.autoClosingQuotes": "always",
 
+  "tailwindCSS.experimental.configFile": "./tailwind.config.ts",
   "tailwindCSS.experimental.classRegex": [
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
     ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]

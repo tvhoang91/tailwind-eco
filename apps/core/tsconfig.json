@@ -1,5 +1,5 @@
 {
-  "extends": "@yaywind/configs/src/typescript/react.json",
+  "extends": "./node_modules/@yaywind/configs/src/typescript/react.json",
   "compilerOptions": {
     "baseUrl": "./",
     "typeRoots": ["./node_modules/@types", "types"],
