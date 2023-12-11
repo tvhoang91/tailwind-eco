@@ -6,22 +6,23 @@ import { forwardRef } from 'react';
 import { cx } from '../../lib/utils';
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
+  'bw-inline-flex bw-items-center bw-justify-center bw-whitespace-nowrap bw-rounded-md bw-text-sm bw-font-medium bw-ring-offset-background bw-transition-colors focus-visible:bw-outline-none focus-visible:bw-ring-2 focus-visible:bw-ring-ring focus-visible:bw-ring-offset-2 disabled:bw-pointer-events-none disabled:bw-opacity-50',
   {
     variants: {
       variant: {
-        default: 'bg-primary text-primary-foreground hover:bg-primary/90',
-        destructive: 'bg-destructive text-destructive-foreground hover:bg-destructive/90',
-        outline: 'border border-input bg-background hover:bg-accent hover:text-accent-foreground',
-        secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
-        ghost: 'hover:bg-accent hover:text-accent-foreground',
-        link: 'text-primary underline-offset-4 hover:underline',
+        default: 'bw-hover:bg-primary/90 bw-bg-primary bw-text-primary-foreground',
+        destructive: 'bw-bg-destructive bw-text-destructive-foreground hover:bw-bg-destructive/90',
+        outline:
+          'bw-border bw-border-input bw-bg-background hover:bw-bg-accent hover:bw-text-accent-foreground',
+        secondary: 'bw-bg-secondary bw-text-secondary-foreground hover:bw-bg-secondary/80',
+        ghost: 'hover:bw-bg-accent hover:bw-text-accent-foreground',
+        link: 'bw-text-primary bw-underline-offset-4 hover:bw-underline',
       },
       size: {
-        default: 'h-10 px-4 py-2',
-        sm: 'h-9 rounded-md px-3',
-        lg: 'h-11 rounded-md px-8',
-        icon: 'h-10 w-10',
+        default: 'bw-h-10 bw-px-4 bw-py-2',
+        sm: 'bw-h-9 bw-rounded-md bw-px-3',
+        lg: 'bw-h-11 bw-rounded-md bw-px-8',
+        icon: 'bw-h-10 bw-w-10',
       },
     },
     defaultVariants: {

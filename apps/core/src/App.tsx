@@ -6,19 +6,15 @@ function App() {
 
   return (
     <>
-      <div className="container py-6">
-        <h1 className="text-2xl font-bold">Vite + React</h1>
+      <div className="bw-container bw-py-6">
+        <h1 className="bw-text-2xl bw-font-bold">Vite + React</h1>
 
-        <div className="round my-4 flex gap-4 rounded border border-solid border-gray-400 bg-background p-3">
-          {/* <button className="inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground ring-offset-background transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">
-            count is {count}
-          </button> */}
-
+        <div className="bw-round bw-my-4 bw-flex bw-gap-4 bw-rounded bw-border bw-border-border bw-bg-background bw-p-3">
           <Button onClick={() => setCount((count) => count + 1)}>count is {count}</Button>
 
-          <Button className="bg-accent text-accent-foreground">Accent</Button>
-
-          <Button className="bg-destructive text-destructive-foreground">Destructive</Button>
+          <Button variant="secondary">Secondary</Button>
+          <Button variant="outline">Outline</Button>
+          <Button variant="destructive">Destructive</Button>
         </div>
       </div>
     </>
